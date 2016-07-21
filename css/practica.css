@@ -68,10 +68,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fondo {
-	animation: 60s Fondo linear infinite;
+	animation: 30s Fondo linear infinite;
 	background-attachment: fixed;
 	background-image: url("../img/bg.jpg");
-	background-position: center center;
+	background-position: top left;
 	background-repeat: repeat-x;
 	-webkit-background-size: cover;
 		 -moz-background-size: cover;
@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 100%;
+	width: 4500px;
 }
 
 @keyframes Fondo {
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 		transform: translateX(0);
 	}
 	100% {
-		transform: translateX(-100vw);
+		transform: translateX(-1500px);
 	}
 }
 
