@@ -2,11 +2,9 @@
 /*****              Reset                *****/
 /*********************************************/
 *, *:before, *:after {
-	-webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-      -ms-box-sizing: border-box;
-       -o-box-sizing: border-box;
-       		box-sizing: border-box;
+ -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 article, aside, button, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
@@ -58,8 +56,12 @@ h1, h2, h3, h4, h5, h6 {
 /*****              Portada              *****/
 /*********************************************/
 .portada {
-	align-items: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	color: white;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	height: 100vh;
 	overflow: hidden;
@@ -67,8 +69,10 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 .fondo {
-	animation: 60s Fondo linear infinite;
-	backface-visibility:hidden;
+	-webkit-animation: 60s Fondo linear infinite;
+	        animation: 60s Fondo linear infinite;
+	-webkit-backface-visibility:hidden;
+	        backface-visibility:hidden;
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: repeat-x;
@@ -77,15 +81,29 @@ h1, h2, h3, h4, h5, h6 {
 	left: 0;
 	position: fixed;
 	top: 0;
-	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	        transform: translate3d(0,0,0);
+}
+
+@-webkit-keyframes Fondo {
+	0% {
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
+	}
+	100% {
+		-webkit-transform: translateX(-100vw);
+		        transform: translateX(-100vw);
+	}
 }
 
 @keyframes Fondo {
 	0% {
-		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
 	}
 	100% {
-		transform: translateX(-100vw);
+		-webkit-transform: translateX(-100vw);
+		        transform: translateX(-100vw);
 	}
 }
 
@@ -130,8 +148,6 @@ h1, h2, h3, h4, h5, h6 {
 .redes .icono:hover {
 	background-color: rgba(255, 255, 255, .4);
   -webkit-transform: scale(1.4);
-  	 -moz-transform: scale(1.4);
   	  -ms-transform: scale(1.4);
-  	   -o-transform: scale(1.4);
   	   		transform: scale(1.4);
 }
