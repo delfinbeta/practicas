@@ -1,2 +1,2 @@
 # Practicas
-Ejercicios Web Propios y colaboraciÃn en GitHub
+Ejercicios Web Propios y colaboración en GitHub
